@@ -39,6 +39,9 @@ body section div .inner {
   padding-top: 1.5rem;
   text-align: center;
 }
+body footer {
+  height: 5rem;
+}
 body .close {
   transform: scale(0);
   transition: all 1.5s ease;
