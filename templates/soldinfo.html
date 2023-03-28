@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>已銷售商品紀錄</title>
+</head>
+<body>
+    
+    <!-- <div>
+        <form action="/update" method="POST">
+
+        {% for i in item %}
+        <div class="row">
+            <div class="col">
+              <p>品名:{{ i.name }}<p>
+            </div>
+            <div class="col">
+              <p>重量:{{ i.weight }}錢<p>
+            </div>
+            <div class="col">
+              <p>國籍:{{ i.country }}<p>
+            </div>
+            <div class="col">
+              <p>日期:{{ i.date }}<p>
+            </div>
+                <button>修改銷貨資料</button>
+            </form>
+            </div>
+            {% endfor %}
+        
+    </div> -->
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>品名</th>
+                <th>重量</th>
+                <th>國籍</th>
+                <th>日期</th>
+            </tr>
+        </thead>
+        <form action="/update" method="POST">
+        {% for i in item %}
+            <tr>
+                <td contenteditable="true" name="name">{{ i.name }}</td>
+                <td>{{ i.weight }}</td>
+                <td>{{ i.country }}</td>
+                <td>{{ i.date }}</td>
+            </tr>
+            
+        {% endfor %}
+        <button>修改資料</button>
+        </form>
+    </table> -->
+    <!-- <form action="/update" method="POST">
+        {% for i in item %}
+        <input type="text" name="name" placeholder={{ i._id }} style="display: none;"></br>
+        品名: <input type="text" name="name" ></br>
+        日期: <input type="text" name="date" placeholder={{ i.date }}></br>
+        重量: <input type="text" name="weight" placeholder={{ i.weight }}></br>
+        國籍: <input type="text" list="typelist" name="country" placeholder={{ i.country }}>
+                <datalist id="typelist">
+                    <option>越南</option>
+                    <option>菲律賓</option>
+                    <option>泰國</option>
+                    <option>台灣</option>
+                    <option>其他:</option>
+                    
+                </datalist>
+    </br>
+        <button>送出</button>
+        {% endfor %}
+    </form> -->
+    <div>
+        {{ table }}
+    </div>  
+    <form action="/finditem">
+        <button>
+            返回查詢頁面
+        </button>
+    </form>
+    <form action="/">
+        <button>
+            回首頁
+        </button>
+    </form>
+
+</body>
+
+</html>

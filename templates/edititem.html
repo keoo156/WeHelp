@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>修改或刪除商品頁面</title>
+</head>
+<body>
+    <form action="/update" method="POST">
+        商品ID:<input value="{{ id._id }}"  name="id" readonly></br>
+        品名: <input value="{{ id.name }}" type="text" name="name"></br>
+        日期: <input value="{{ id.date }}" type="date" name="date"></br>
+        重量: <input value="{{ id.weight }}" type="text" name="weight"></br>
+        國籍: <input value="{{ id.country}}" type="text" list="typelist" name="country">
+                <datalist id="typelist">
+                    <option>越南</option>
+                    <option>菲律賓</option>
+                    <option>泰國</option>
+                    <option>台灣</option>
+                    <option>其他:</option>
+                    
+                </datalist>
+    </br>
+        <button>送出修改資料</button>
+    </form>
+    <form action="/delete" method="POST">
+        商品ID:<input value="{{ id._id }}"  name="id" readonly></br>
+        品名: <input value="{{ id.name }}" type="text" name="name" readonly></br>
+        重量: <input value="{{ id.weight }}" type="text" name="weight" readonly></br>
+        <button>刪除此資料</button>
+    </form>
+</body>
+</html>

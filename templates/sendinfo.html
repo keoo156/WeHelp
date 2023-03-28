@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/send" method="POST">
+        
+        品名: <input type="name" name="name" placeholder="請輸入正確品名"></br>
+        日期: <input type="date" name="date"></br>
+        重量(錢): <input type="text" name="weight"></br>
+        國籍: <input type="text" list="typelist" name="country">
+                <datalist id="typelist">
+                    <option>越南</option>
+                    <option>菲律賓</option>
+                    <option>泰國</option>
+                    <option>台灣</option>
+                    <option>其他:</option>
+                    
+                </datalist>
+    </br>
+        <button>送出</button>
+    </form>
+    <form action="/">
+        <button>
+            回首頁
+        </button>
+    </form>
+</body>
+</html>

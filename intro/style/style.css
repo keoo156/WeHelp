@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, p {
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+body header {
+  animation: intoWeb 2.8s ease-in;
+}
+body header h1 {
+  padding-top: 5rem;
+}
+body section {
+  animation: intoWeb 4s ease-in;
+  padding: 0rem 10rem;
+}
+body section div {
+  padding-top: 2rem;
+}
+body section div .topic {
+  text-align: center;
+  cursor: pointer;
+}
+body section div .topic:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+body section div .inner {
+  padding-top: 1.5rem;
+  text-align: center;
+}
+body .close {
+  transform: scale(0);
+  transition: all 1.5s ease;
+}
+
+@keyframes showUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes intoWeb {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
