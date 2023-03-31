@@ -22,7 +22,7 @@ body header h1 {
 }
 body section {
   animation: intoWeb 4s ease-in;
-  padding: 0rem 10rem;
+  padding: 0rem 15rem;
 }
 body section div {
   padding-top: 2rem;
@@ -36,8 +36,8 @@ body section div .topic:hover {
   transition: all 0.5s ease;
 }
 body section div .inner {
-  padding-top: 1.5rem;
-  text-align: center;
+  padding: 1.5rem 2rem 0 2rem;
+  text-align: left;
 }
 body footer {
   height: 5rem;
@@ -55,15 +55,6 @@ body .close {
     transform: scale(1);
   }
 }
-@keyframes close {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0);
-  }
-}
-
 @keyframes intoWeb {
   from {
     opacity: 0;
