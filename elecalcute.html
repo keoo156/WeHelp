@@ -52,53 +52,52 @@
         let preClo3rd = document.querySelectorAll(".preClo1")
         let result = document.getElementById("showSum");
         let sumClo = 0;
-        sum.addEventListener("click", ()=>{
-            preClo3rd.forEach((e)=>{
-                sumClo += (Number(e.value));
-                result.innerHTML = "加總為:" + sumClo.toFixed(2);
-                
-            })
+        //把各個電表的值相加
+        preClo3rd.forEach((e)=>{
+            sumClo += e.valueAsNumber;
+            
         })
+        console.log(sumClo);
 
-        function caculate(){
-            let clock1=document.getElementById("clock1");
-            let clock1value=Number(clock1.value);
+        // function caculate(){
+        //     let clock1=document.getElementById("clock1");
+        //     let clock1value=Number(clock1.value);
 
-            let clock2=document.getElementById("clock2");
-            let clock2value=Number(clock2.value);
+        //     let clock2=document.getElementById("clock2");
+        //     let clock2value=Number(clock2.value);
 
-            let clock3=document.getElementById("clock3");
-            let clock3value=Number(clock3.value);
+        //     let clock3=document.getElementById("clock3");
+        //     let clock3value=Number(clock3.value);
 
-            let clock4=document.getElementById("clock4");
-            let clock4value=Number(clock4.value);
+        //     let clock4=document.getElementById("clock4");
+        //     let clock4value=Number(clock4.value);
 
-            let clock5=document.getElementById("clock5");
-            let clock5value=Number(clock5.value);
+        //     let clock5=document.getElementById("clock5");
+        //     let clock5value=Number(clock5.value);
 
-            let clock6=document.getElementById("clock6");
-            let clock6value=Number(clock6.value);
+        //     let clock6=document.getElementById("clock6");
+        //     let clock6value=Number(clock6.value);
 
-            let totalele=document.getElementById("totalele");
-            let totalelevalue=Number(totalele.value);
+        //     let totalele=document.getElementById("totalele");
+        //     let totalelevalue=Number(totalele.value);
 
-            let totalmon=document.getElementById("totalmoney");
-            let totalmoney=Number(totalmon.value);
+        //     let totalmon=document.getElementById("totalmoney");
+        //     let totalmoney=Number(totalmon.value);
             
-            let thirdele=(totalelevalue-clock1value-clock2value-clock3value-clock4value-clock5value-clock6value)*0.5+clock1value+clock2value+clock3value;
-            let fourele=(totalelevalue-clock1value-clock2value-clock3value-clock4value-clock5value-clock6value)*0.5+clock4value+clock5value+clock6value;
+        //     let thirdele=(totalelevalue-clock1value-clock2value-clock3value-clock4value-clock5value-clock6value)*0.5+clock1value+clock2value+clock3value;
+        //     let fourele=(totalelevalue-clock1value-clock2value-clock3value-clock4value-clock5value-clock6value)*0.5+clock4value+clock5value+clock6value;
 
-            let thirdmoney=thirdele/totalelevalue*totalmoney;
-            let fourmoney=fourele/totalelevalue*totalmoney;
+        //     let thirdmoney=thirdele/totalelevalue*totalmoney;
+        //     let fourmoney=fourele/totalelevalue*totalmoney;
 
-            let elem=document.getElementById("result3rd");
-                elem.innerHTML="$"+Math.round(thirdmoney);
+        //     let elem=document.getElementById("result3rd");
+        //         elem.innerHTML="$"+Math.round(thirdmoney);
             
-            let ele=document.getElementById("result4th");
-                ele.innerHTML="$"+Math.round(fourmoney);
+        //     let ele=document.getElementById("result4th");
+        //         ele.innerHTML="$"+Math.round(fourmoney);
             
 
-        }
+        // }
         
     </script>
     
