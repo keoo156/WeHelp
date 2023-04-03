@@ -37,16 +37,20 @@ body{
             width: 5rem;
         }
     }
+}
     .hex{
         .hex_num{
             border: 1px solid black;
             width: 7rem;
+            height: 1.5rem;
         }
         .hex_color{
             border: 1px solid black;
-            width: 3rem;
-            height: 3rem;
+            width: 5rem;
+            height: 5rem;
             margin: 1rem auto;
         }
+       
     }
+
 }

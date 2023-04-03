@@ -1,8 +1,5 @@
 //dom宣告
-// let redNum = document.querySelector(".rednum");
-// let greenNum = document.querySelector(".greennum");
-// let blueNum = document.querySelector(".bluenum");
-// let submit = document.querySelector(".submit");
+
 let hexNum = document.querySelector(".hex_num");
 let finalColor = document.querySelector(".hex_color");
 let Sliders = document.querySelectorAll(".slider")
@@ -11,38 +8,12 @@ let green_number = document.querySelector(".green_number");
 let blue_number = document.querySelector(".blue_number")
 
 //掛監聽器
-// submit.addEventListener("click", (e) => {
-//   let red_num = parseInt(redNum.value);
-//   let green_num = parseInt(greenNum.value);
-//   let blue_num = parseInt(blueNum.value);
-//   let arr = [red_num, green_num, blue_num];
-//   let hexString = "";
-//   if (!Number.isNaN(arr[0]) && !Number.isNaN(arr[1]) && !Number.isNaN(arr[2])) {
-//     if (
-//       arr[0] >= 0 &&
-//       arr[0] <= 255 &&
-//       arr[1] >= 0 &&
-//       arr[1] <= 255 &&
-//       arr[2] >= 0 &&
-//       arr[2] <= 255
-//     ) {
-//       for (let i = 0; i < arr.length; i++) {
-//         hexString += getNum(arr[i]);
-//       }
-//     } else {
-//       alert("請輸入正確數值");
-//     }
-//   } else {
-//     alert("請輸入正確數值");
-//   }
-//   hexNum.innerHTML = `#${hexString}`
-//   finalColor.style.backgroundColor = `#${hexString}`
-// });
+
 Sliders.forEach((slider)=>{
   slider.addEventListener("input", (e)=>{
     let arr = [];
     let newHex = ""
-    for (let i = 0; i <3 ; i++){
+    for (let i = 1; i <4 ; i++){
       arr.push(e.target.parentElement.parentElement.children[i].children[0].valueAsNumber)
     }
     for (let j = 0; j < arr.length; j++){
