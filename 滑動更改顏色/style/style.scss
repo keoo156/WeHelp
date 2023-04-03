@@ -13,31 +13,18 @@ body{
         text-align: center;
         margin: 0 5rem;
     }
-    .rgb{
-        .red ,.green ,.blue{
-            display: flex;
-            .redbox,.greenbox,.bluebox{
-                width: 1.5rem;
-                height: 1.5rem;
-                border: 1px solid black;
-            }
-            .redbox{
-                background-color: red;
-            }
-            .greenbox{
-                background-color: green;
-            }
-            .bluebox{
-                background-color: blue;
-        }
+    .sliders{
         input{
-            margin: 0.3rem 1rem 0.3rem 0.5rem;
+            margin-left: 0.5rem;
         }
-        .submit{
-            width: 5rem;
+        .slider{
+            display: flex;
+            margin: 1rem ;
+            div{
+                margin-left: 1rem;
+            }
         }
     }
-}
     .hex{
         .hex_num{
             border: 1px solid black;
