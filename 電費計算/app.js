@@ -1,4 +1,5 @@
 const sum = document.getElementById("sum");
+
         const preClo3rd = document.querySelectorAll(".prethird");
         const thisClo3rd = document.querySelectorAll(".thisthird");
         const preClo4th = document.querySelectorAll(".prefourth");
@@ -39,7 +40,6 @@ const sum = document.getElementById("sum");
             let fourThisSum = sumClock(thisClo4th);
             let incresed = (thirdThisSum - thirdPreSum) / 10 + (fourThisSum - fourPreSum) / 10
             let restEle = totalEle.valueAsNumber - incresed
-            console.log(restEle)
             let thirdPercent = ((thirdThisSum - thirdPreSum)/10 + restEle / 2) / totalEle.valueAsNumber
             let fourPercent =  ((fourThisSum - fourPreSum)/10 + restEle / 2) / totalEle.valueAsNumber
             thirdMoney.innerHTML = "三樓總電費為:" + totalMoney.valueAsNumber * ((Math.round(thirdPercent * 100)) / 100)
@@ -49,4 +49,4 @@ const sum = document.getElementById("sum");
         }
         })
         
-        
+       
